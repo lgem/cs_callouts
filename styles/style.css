@@ -1,4 +1,4 @@
-.parent {
+#parent {
     position: relative;
     top: 0;
     left: 0;
@@ -9,8 +9,18 @@
     left: 0;
 }
 #detail {
-    width: 20em;
+    width: 30em;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
+    float: right;
+}
+.de_dust2 {
+    text-align: right
+}
+body {
+    min-height: 100vh;
+}
+.flex-fill {
+    flex: 1 1 auto;
 }
