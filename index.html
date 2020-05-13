@@ -1,75 +1,90 @@
-<html lang="es">
+<!doctype html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="styles/style.css">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>CS Callouts</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/album/">
+
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="js/interactive.js"></script>
-    <title>CS Callouts</title>
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="styles/album.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="parent">
-        <div class="col-lg-2">
-            <button type="button" class="btn btn-primary" onclick="setMap('de_inferno')">de_inferno</button>
-            <button type="button" class="btn btn-primary" onclick="setMap('de_dust2')">de_dust2</button>
+    <main role="main">
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-6 shadow-sm">
+                            <a href="de_dust2.html"><img class="card-img-top" src="img/de_dust2/de_dust2.png" alt=""></a>
+                            <div class="card-body">
+                                <p class="card-text">de_dust2</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="de_dust2.html"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                                        <a href="img/de_dust2/de_dust2.png" download>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">Descargar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-6 shadow-sm">
+                            <a href="de_inferno.html"><img class="card-img-top" src="img/de_inferno/de_inferno.png" alt=""></a>
+                            <div class="card-body">
+                                <p class="card-text">de_inferno</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="de_inferno.html"><button type="button" class="btn btn-sm btn-outline-secondary">Ver</button></a>
+                                        <a href="img/de_inferno/de_inferno.png" download>
+                                            <button type="button"
+                                                class="btn btn-sm btn-outline-secondary">Descargar</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-2">
-            <img id="map" src="img/base_map.png" usemap="">
-            <img id="detail" src="img/transparente.png" alt="" />
-        </div>
-    </div>
-    <map name="image-map-de_inferno">
-        <area target="" alt="base_tt.png" title="img/de_inferno/base_tt.png" href="" coords="57,504,167,539"
-            shape="rect" onmouseover="change(this.title)" onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="hold_tt.png" title="img/de_inferno/hold_tt.png" href="" coords="265,536,297,656"
-            shape="rect" onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="casa_tt.png" title="img/de_inferno/casa_tt.png" href="" coords="305,577,391,606"
-            shape="rect" onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="puente.png" title="img/de_inferno/puente.png" href="" coords="332,610,361,692" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="falso.png" title="img/de_inferno/falso.png" href="" coords="429,624,526,664" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="pipe.png" title="img/de_inferno/pipe.png" href="" coords="518,730,608,762" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="oscuro.png" title="img/de_inferno/oscuro.png" href="" coords="607,577,639,670" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="ruta.png" title="img/de_inferno/ruta.png" href="" coords="722,594,808,631" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="arena.png" title="img/de_inferno/arena.png" href="" coords="817,663,917,696" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="a.png" title="img/de_inferno/a.png" href="" coords="788,519,835,565" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="rampa.png" title="img/de_inferno/rampa.png" href="" coords="308,445,426,484" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="medio.png" title="img/de_inferno/medio.png" href="" coords="507,497,625,534" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="banana.png" title="img/de_inferno/banana.png" href=""
-            coords="469,360,431,352,486,239,520,252" shape="poly" onmouseover="change(this.title)"
-            onmouseout="baseImg()">
-        <area target="" alt="b.png" title="img/de_inferno/b.png" href="" coords="459,80,496,119" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="brazo.png" title="img/de_inferno/brazo.png" href="" coords="527,1,639,38" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="base_ct.png" title="img/de_inferno/base_ct.png" href="" coords="827,202,951,243"
-            shape="rect" onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="biblioteca.png" title="img/de_inferno/biblioteca.png" href="" coords="843,363,974,392"
-            shape="rect" onmouseover="change(this.title)" onmouseout="baseImg()">
-        <area target="" alt="mara.png" title="img/de_inferno/mara.png" href="" coords="706,389,816,435" shape="rect"
-            onmouseover="change(this.title)" onmouseout="baseImg()">
-    </map>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="../assets/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
